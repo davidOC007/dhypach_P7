@@ -2,6 +2,25 @@
 
 Lancement du frontend :
 
+Créer un dossier .eslintrc.js dans le dossier frontend et le renseigner avec ceci :
+module.exports = {
+  root: true,
+  env: {
+    node: true
+  },
+  'extends': [
+    'plugin:vue/essential',
+    'eslint:recommended'
+  ],
+  parserOptions: {
+    parser: 'babel-eslint'
+  },
+  rules: {
+    'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off'
+  }
+}
+
 cd frontend
 
 npm install
