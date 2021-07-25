@@ -31,6 +31,8 @@ module.exports = {
   
 }
 
+Ensuite, procéder comme ceci :
+
 cd frontend
 
 npm install
