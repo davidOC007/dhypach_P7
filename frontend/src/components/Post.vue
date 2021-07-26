@@ -5,9 +5,7 @@
         <div class="post-header mb-3">
           <p class="mb-0" align="center">
             <span class="user-name font-weight-bolder" @click="getUsersPosts">
-              {{
-              post.user
-              }}
+              {{ post.user }}
             </span>
             le {{ post.creationDate }}
           </p>
@@ -242,7 +240,7 @@ export default {
   justify-content: center;
   align-items: center;
   background-color: #B7B7BD;
-  font-size: 1em;
+  font-size: 16px;
   border-radius : 15px 15px 0 0;
   white-space: pre-wrap; 
 }
@@ -253,18 +251,18 @@ export default {
 
 .text-area {
   resize: none;
-  border: 1px solid #fd2d01;
+  border: 1px solid #F73708;
 }
 
 .text-area:focus {
   outline: none !important;
-  border: 1px solid #fd2d01;
+  border: 1px solid #F73708;
 }
 
 .send-button {
   background-color: #992930;
   color: #FFFFFF;
-  border: solid 1px #fd2d01;
+  border: solid 1px #F73708;
 }
 
 .send-button:hover {
@@ -273,7 +271,7 @@ export default {
 
 .reset-button {
   background-color: transparent;
-  border: solid 1px #ffb3b3;
+  border: solid 1px #F73708;
   color:#e42701;
 }
 
@@ -288,7 +286,7 @@ export default {
 }
 
 .error-message {
-  color: #fd2d01;
+  color: #F73708;
 }
 
 .post-image {
@@ -304,8 +302,8 @@ export default {
 
 .image-input {
   display: block;
-  width: 5.5em;
-  height: 5.5em;
+  width: 100px;
+  height: 80px;
   cursor: pointer;
   background-size: contain;
   background-repeat: no-repeat;
@@ -324,7 +322,7 @@ export default {
   justify-content: center;
   align-items: center;
   color: #FFFFFF;
-  font-size: 1em;
+  font-size: 16px;
   text-align: center;
   border: solid 1px #fd2d01;
   border-radius: 5px;
@@ -373,7 +371,7 @@ export default {
     max-height: 250px;
   }
   .post-content {
-    font-size: 0.9em;
+    font-size: 14px;
   }
   .post-header {
     font-size: 13px;
